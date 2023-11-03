@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions Page</title>
+    <h1>Welcome to Predictions Page!</h1>
+    <h2>Please the Values in the below form</h2>
+
+    <p>{{ output }}</p>
+</head>
+<body>
+    <form action="{{url_for('predict')}}"method='post'>
+        <div>
+            <label for="Age">Age:</label>
+            <input type="text" id="Age" name="Age" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="RIAGENDR">RIAGENDR:</label>
+            <input type="text" id="RIAGENDR" name="RIAGENDR" placeholder="please enter vales here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="PAQ605">PAQ605:</label>
+            <input type="text" id="PAQ605" name="PAQ605" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="BMXBMI">BMXBMI:</label>
+            <input type="text" id="BMXBMI" name="BMXBMI" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="LBXGLU">LBXGLU:</label>
+            <input type="text" id="LBXGLU" name="LBXGLU" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="DIQ010">DIQ010:</label>
+            <input type="text" id="DIQ010" name="DIQ010" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="LBXGLT">LBXGLT:</label>
+            <input type="text" id="LBXGLT" name="LBXGLT" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="LBXIN">LBXIN:</label>
+            <input type="text" id="LBXIN" name="LBXIN" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <input type="submit" value="Predict!">
+
+        <br>
+
+    </form>
+    
+</body>
+</html>
